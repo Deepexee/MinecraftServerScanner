@@ -39,6 +39,7 @@ def thread_worker():
 
 if __name__ == "__main__":
     os.system('title MinecraftScan - twitch.tv/deepexee') # je change le nom de la fenetre
+    os.system('start https://twitch.tv/deepexee') # Ouvre mon twitch (faut que je mange a la fin du mois)
 
     threads = []
     for _ in range(num_threads):
