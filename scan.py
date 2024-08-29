@@ -27,7 +27,7 @@ def scan_ip(ports):
             if result == 0: # Si le script arrive a ce connecter
                 print(f"{ip} is a Minecraft server!") # Affiche dans la console
                 with open(output_file, 'a') as file: # Ouvre le fichier texte
-                    file.write(f"{ip}\n") # Ecris dans le fichier texte 
+                    file.write(f"{ip}:{port}\n") # Ecris dans le fichier texte 
                 sock.close()
                 return
             else: # Sinon
